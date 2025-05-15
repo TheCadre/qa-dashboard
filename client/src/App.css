@@ -1,0 +1,260 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: left;
+  width: 100%;
+}
+
+/* Main container styles */
+.app-container {
+  font-family: Arial, sans-serif;
+  color: #333;
+  max-width: 100%;
+}
+
+/* Header styles */
+header {
+  background-color: #2c3e50;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.server-status {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.server-status.loading {
+  background-color: #f39c12;
+}
+
+.server-status.online {
+  background-color: #2ecc71;
+}
+
+.server-status.offline {
+  background-color: #e74c3c;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Main content layout */
+main {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 1rem;
+}
+
+section {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+h2 {
+  margin-top: 0;
+  color: #2c3e50;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Form styles */
+.form-group {
+  display: flex;
+  gap: 0.5rem;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+button:hover:not(:disabled) {
+  background-color: #2980b9;
+}
+
+button:disabled {
+  background-color: #95a5a6;
+  cursor: not-allowed;
+}
+
+/* Test examples */
+.test-examples {
+  margin-top: 1rem;
+}
+
+.test-examples h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.test-examples ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.test-examples li {
+  padding: 0.5rem;
+  background-color: #f8f9fa;
+  margin-bottom: 0.3rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.test-examples li:hover {
+  background-color: #e9ecef;
+}
+
+/* Test results styles */
+.results-summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.summary-item {
+  flex: 1;
+  min-width: 80px;
+  background-color: #f8f9fa;
+  padding: 0.5rem;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.summary-item.passed {
+  background-color: rgba(46, 204, 113, 0.2);
+}
+
+.summary-item.failed {
+  background-color: rgba(231, 76, 60, 0.2);
+}
+
+.summary-item.skipped {
+  background-color: rgba(243, 156, 18, 0.2);
+}
+
+.summary-item .label {
+  font-size: 0.8rem;
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.summary-item .value {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Test details table */
+.test-details {
+  margin-top: 1rem;
+}
+
+.test-details table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.test-details th,
+.test-details td {
+  padding: 0.5rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.test-details tr.passed td {
+  background-color: rgba(46, 204, 113, 0.05);
+}
+
+.test-details tr.failed td {
+  background-color: rgba(231, 76, 60, 0.05);
+}
+
+.test-details tr.skipped td {
+  background-color: rgba(243, 156, 18, 0.05);
+}
+
+/* Test output */
+.output-container {
+  background-color: #f8f9fa;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  padding: 1rem;
+  height: 300px;
+  overflow-y: auto;
+}
+
+.output-container pre {
+  font-family: monospace;
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+/* Report iframe */
+.report-iframe-container {
+  margin-top: 1rem;
+  height: 600px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.report-iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  .form-group {
+    flex-direction: column;
+  }
+}
