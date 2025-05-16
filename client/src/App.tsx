@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import "./App.css";
 
 // Define the API base URL
-const API_BASE_URL = "https://api-qa-dashboard.cadreodr.com";
+const API_BASE_URL = `${import.meta.env.VITE_API_BASE_URL}/api`;
 
 // Define types for test results
 interface Test {
