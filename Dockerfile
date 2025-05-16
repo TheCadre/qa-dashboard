@@ -1,4 +1,5 @@
-FROM node:22-slim
+# FROM node:23-slim
+FROM 447485723174.dkr.ecr.ap-south-1.amazonaws.com/node-23:latest
 
 WORKDIR /usr/src/app
 
