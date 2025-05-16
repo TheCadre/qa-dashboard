@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import "./App.css";
 
 // Define the API base URL
-const API_BASE_URL = "http://localhost:3000/api";
+const API_BASE_URL = "https://api-qa-dashboard.cadreodr.com";
 
 // Define types for test results
 interface Test {
